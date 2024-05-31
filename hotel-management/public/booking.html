@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Tropical Breeze Resort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="Images/cartagena.png" alt="Hotel Logo" class="corner-logo">
+    <img src="Images/map.png" alt="Location Map" class="location-map">
+</div>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">Rooms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="booking">
+        <h2>Booking Page</h2>
+        <form id="bookingForm">
+            <input type="hidden" id="bookingId" name="bookingId">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" required><br>
+            <label for="rooms">Select Rooms:</label><br>
+            <label for="singleRooms">Single:</label>
+            <input type="number" id="singleRooms" name="singleRooms" min="0" value="0"><br>
+            <label for="doubleRooms">Double:</label>
+            <input type="number" id="doubleRooms" name="doubleRooms" min="0" value="0"><br>
+            <label for="tripleRooms">Triple:</label>
+            <input type="number" id="tripleRooms" name="tripleRooms" min="0" value="0"><br>
+            <label for="apartmentRooms">Apartment:</label>
+            <input type="number" id="apartmentRooms" name="apartmentRooms" min="0" value="0"><br>
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin" required><br>
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

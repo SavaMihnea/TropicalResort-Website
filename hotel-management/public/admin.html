@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Tropical Breeze Resort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="Images/cartagena.png" alt="Hotel Logo" class="corner-logo">
+    <img src="Images/map.png" alt="Location Map" class="location-map">
+</div>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="admin">
+        <h2>Admin Page</h2>
+        <div class="bookings-grid" id="bookingsBody">
+            <!-- Bookings will be appended here by JavaScript -->
+        </div>
+    </section>
+</main>
+
+<!-- Modify Booking Modal -->
+<div id="modifyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModifyModal()">&times;</span>
+        <form id="modifyForm">
+            <input type="hidden" id="modifyBookingId" name="modifyBookingId">
+            <label for="modifyName">Name:</label>
+            <input type="text" id="modifyName" name="modifyName" required><br>
+            <label for="modifyEmail">Email:</label>
+            <input type="email" id="modifyEmail" name="modifyEmail" required><br>
+            <label for="modifyAge">Age:</label>
+            <input type="number" id="modifyAge" name="modifyAge" required><br>
+            <label for="modifyPeople">Number of People:</label>
+            <input type="number" id="modifyPeople" name="modifyPeople" required><br>
+            <label for="modifySingleRooms">Single Rooms:</label>
+            <input type="number" id="modifySingleRooms" name="modifySingleRooms" min="0" required><br>
+            <label for="modifyDoubleRooms">Double Rooms:</label>
+            <input type="number" id="modifyDoubleRooms" name="modifyDoubleRooms" min="0" required><br>
+            <label for="modifyTripleRooms">Triple Rooms:</label>
+            <input type="number" id="modifyTripleRooms" name="modifyTripleRooms" min="0" required><br>
+            <label for="modifyApartmentRooms">Apartment Rooms:</label>
+            <input type="number" id="modifyApartmentRooms" name="modifyApartmentRooms" min="0" required><br>
+            <label for="modifyCheckin">Check-In Date:</label>
+            <input type="date" id="modifyCheckin" name="modifyCheckin" required><br>
+            <label for="modifyCheckout">Check-Out Date:</label>
+            <input type="date" id="modifyCheckout" name="modifyCheckout" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

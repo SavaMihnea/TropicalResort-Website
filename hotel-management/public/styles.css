@@ -1,0 +1,546 @@
+body {
+    font-family: "Monotype Corsiva";
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background: url('Images/night.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*cartagena image*/
+.logo-container {
+    position: absolute;
+    top: 80px;
+    left: 38px;
+    z-index: -1;
+}
+
+.corner-logo {
+    width: 270px;
+    height: auto;
+}
+
+/*map image*/
+.location-map {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+    z-index: -1;
+}
+
+/*palmtrees image*/
+.bottom-right-image-container {
+    position: absolute;
+    bottom: -1320px;
+    right: 20px;
+    z-index: -1;
+}
+
+.bottom-right-image {
+    width: 1140px; /* Match the width of the arrow image */
+    height: 1300px;
+}
+
+/*navigation bar*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: palegoldenrod;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Add transform to the transition property */
+}
+
+nav a:hover {
+    color: #48D1CC;
+    transform: scale(1.1); /* Enlarge the button by 10% on hover */
+}
+
+/*main logo*/
+header {
+    background-color: rgba(240, 230, 140, 0.7);
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    text-align: center;
+    padding: 1rem;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    margin: 65px auto 100px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hotelLogo {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/*stars*/
+.stars {
+    font-size: 2rem; /* Adjust the size of the stars */
+    color: gold; /* Color of the stars */
+    text-shadow: black 2px 2px;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+}
+
+/*main message*/
+.main-message {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    text-shadow: goldenrod 1px 1px;
+}
+
+/*book your stay button and promo text*/
+main {
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    text-shadow: #48D1CC 1px 1px;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-family: "Monotype Corsiva";
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Add transform to the transition property */
+    z-index: 1;
+}
+
+button:hover {
+    background-color: #48D1CC;
+    transform: scale(1.2);
+}
+
+/*booking form*/
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(240, 230, 140, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+}
+
+#booking {
+    margin-top: 65px;
+}
+
+#contact {
+    margin-top: 65px;
+}
+
+#login {
+    margin-top: 65px;
+}
+
+#register {
+    margin-top: 65px;
+}
+
+/*register button*/
+#registerButton {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+    font-family: "Monotype Corsiva";
+    font-weight: bold;
+}
+
+#registerButton:hover {
+    background-color: #48D1CC;
+    transform: none;
+}
+
+#registerForm button[type="submit"]:hover {
+    background-color: #48D1CC;
+    transform: none; /* Disable the scale transform */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.2rem;
+    color: #333;
+    font-size: 1.3rem; /*increase font size for labels*/
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="password"] {
+    padding: 0.5rem;
+    margin-top: 0.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /*increase font size for input fields*/
+    font-weight: bold;
+}
+
+/*titles for booking, contact and login*/
+section h2 {
+    font-family: "Monotype Corsiva";
+    font-size: 3rem;
+    font-weight: bold;
+    color: goldenrod;
+    text-shadow: black 2.5px 2.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*book now, send message and login buttons*/
+input[type="submit"], button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+    font-family: "Monotype Corsiva";
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #48D1CC;
+}
+
+/*specific rule to disable hover effect for the login button*/
+#loginForm button[type="submit"]:hover {
+    background-color: #48D1CC;
+    transform: none;
+}
+
+/*home page images and text*/
+.image-text-block {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: rgba(240, 230, 140, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+}
+
+.image-left {
+    width: 60%;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 8px;
+}
+
+.text-right {
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+.image-right {
+    width: 60%;
+    height: auto;
+    margin-left: 2rem;
+    border-radius: 8px;
+}
+
+.text-left {
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+/*contact info*/
+.contact-info {
+    background-color: rgba(240, 230, 140, 0.7);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/*delete and modify buttons*/
+.delete-button, .modify-button {
+    padding: 0.2rem 0.5rem;
+    font-family: "Monotype Corsiva";
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.delete-button:hover, .modify-button:hover {
+    background-color: #48D1CC;
+    transform: scale(1.1);
+}
+
+/*increase the font size for booking details on user and admin pages*/
+.booking-container p {
+    font-size: 1.5rem; /* Adjust this value as needed */
+    font-weight: bold;
+}
+
+/*contact text style*/
+.contact-text {
+    font-family: "Monotype Corsiva";
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust this size if necessary */
+    color: black; /* Adjust this color if necessary */
+    text-shadow: goldenrod 1px 1px;
+    margin: 0.5rem 0;
+}
+
+/* Booking container styling */
+.booking-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(240, 230, 140, 0.7);
+}
+
+/* Contact text styling */
+.contact-text {
+    font-family: Arial, sans-serif; /* Example font family */
+    font-size: 1.2rem; /* Example font size */
+    color: #333; /* Example text color */
+    margin: 0.5rem 0; /* Example margin */
+}
+
+/* Delete and modify button styling */
+.delete-button, .modify-button {
+    padding: 0.5rem;
+    font-family: Arial, sans-serif; /* Example font family */
+    font-size: 1rem; /* Example font size */
+    font-weight: bold;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.2rem;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.modify-button {
+    background-color: #66b3ff;
+}
+
+.modify-button:hover {
+    background-color: #0066cc;
+}
+
+/* Bookings grid layout */
+#bookingsBody, #userBookingsBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/*modal style*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*about page style*/
+body {
+    font-family: "Monotype Corsiva";
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background: url('Images/night.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.logo-container {
+    position: absolute;
+    top: 80px;
+    left: 38px;
+    z-index: -1;
+}
+
+.corner-logo {
+    width: 270px;
+    height: auto;
+}
+
+.location-map {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin-top: 70px;
+    z-index: -1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: palegoldenrod;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #48D1CC;
+    transform: scale(1.1);
+}
+
+main {
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    text-shadow: #48D1CC 1px 1px;
+}
+
+section.room-description {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: rgba(240, 230, 140, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 1);
+}
+
+.text-left {
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.image-right {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}

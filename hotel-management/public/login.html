@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="Images/cartagena.png" alt="Hotel Logo" class="corner-logo">
+    <img src="Images/map.png" alt="Location Map" class="location-map">
+</div>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">Rooms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="login">
+        <h2>Login page</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <div id="loginMessage" class="error-message"></div>
+            <button type="submit">Login</button>
+        </form>
+        <button id="registerButton" onclick="window.location.href='register.html'">Don't have an account? Create one!</button>
+    </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

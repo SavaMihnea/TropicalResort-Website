@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tropical Breeze Resort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="Images/cartagena.png" alt="Hotel Logo" class="corner-logo">
+    <img src="Images/map.png" alt="Location Map" class="location-map">
+</div>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">Rooms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="header-content">
+        <img src="Images/tropical.png" alt="Hotel Logo" id="hotelLogo">
+        <div class="stars">★★★★★ Resort</div>
+        <p class="main-message">"Don't miss out on the vacation of your lifetime!"</p>
+    </div>
+</header>
+<main>
+    <section class="image-text-block">
+        <img src="Images/pool.webp" alt="Night View" class="image-left">
+        <div class="text-right">
+            <h2>Welcome to Our Beachside Resort</h2>
+            <p>Experience the serenity of our beautiful beachside resort. Let the sound of the waves and the warmth of the sun rejuvenate your spirit. Whether you're here to relax or seek adventure, our resort offers something for everyone.</p>
+        </div>
+    </section>
+    <section class="image-text-block">
+        <div class="text-left">
+            <h2>Discover Paradise</h2>
+            <p>Our resort is a haven of peace and tranquility, nestled along the stunning coastline. Enjoy luxurious accommodations, gourmet dining, and a variety of activities designed to create unforgettable memories.</p>
+        </div>
+        <img src="Images/bar.webp" alt="Night View" class="image-right">
+    </section>
+    <button id="bookNowButton">Book Your Stay!</button>
+</main>
+<div class="bottom-right-image-container">
+    <img src="Images/palmtrees.png" alt="Palm Trees" class="bottom-right-image">
+</div>
+<script>
+    document.getElementById('bookNowButton').addEventListener('click', function() {
+        window.location.href = 'booking.html';
+    });
+</script>
+</body>
+</html>

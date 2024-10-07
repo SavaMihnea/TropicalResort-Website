@@ -1,5 +1,5 @@
 # TropicalResort-Website
-This is a web aplication based on a hotel management system built in WebStorm, using html and css(front-end), JavaScript and Express.js(back-end), linked in real time to a database(SQL Server Management System) to store essential information,
+This is a web aplication based on a hotel management system built in WebStorm, using html and css(front-end), JavaScript and Express.js(back-end), linked in real time to a database(SQL Server Management System) to store essential information.
 
 The website is created on a local server, so accessing the database won't be possible for other users. By creating themselves a local database server in SSMS and linking it trough the prompt command 'node server.js', every feature of the site should work perfectly. Still, minor adjustments have to be made in the server.js file, such as the name of the database and the username. These fields can be found under "//Database configuration" comment.
 

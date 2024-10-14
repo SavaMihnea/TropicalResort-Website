@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    sessionStorage.setItem('username', username); // Save username in session storage
+                    sessionStorage.setItem('username', username); // Save username in storage
                     if (username === 'sava.mihnea') {
                         window.location.href = 'admin.html';
                     } else {

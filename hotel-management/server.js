@@ -50,6 +50,8 @@ app.post('/login', (req, res) => {
     });
 });
 
+
+// Register form
 app.post('/register', (req, res) => {
     const { name, age, email, username, password } = req.body;
 
@@ -66,6 +68,7 @@ app.post('/register', (req, res) => {
         });
 });
 
+// Route to fetch all bookings for user
 app.post('/getUserBookings', (req, res) => {
     const { username } = req.body;
 
@@ -155,6 +158,7 @@ app.listen(port, () => {
     }
 });
 
+// Route to get booking
 app.get('/getBookingById/:id', (req, res) => {
     const { id } = req.params;
 
